@@ -1,0 +1,81 @@
+.resume-page {
+    background-color: #242424;
+}
+
+.download-resume {
+    text-align: left;
+    padding: 1rem 0 0 2rem;
+}
+
+.resume-page div {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.resume-container {
+    text-align: left;
+    color: #fff;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.resume-container h3 {
+    font-size: 1.6rem;
+}
+
+.resume-container h4 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.resume-container a {
+    color: #4fe6ff;
+}
+
+.resume-head {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 2rem 0;
+}
+
+.resume-contact, .resume-skills, .resume-projects, .client-projects, .resume-education {
+    padding: 2rem;
+    border-bottom: solid 1px grey;
+}
+
+.resume-contact{
+    padding: 1rem 2rem 2rem;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item i {
+    color: #fff;
+}
+
+#accordion {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.resume-experience {
+    padding: 2rem;
+}
+
+.arrow {
+    background-color: #242424;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
