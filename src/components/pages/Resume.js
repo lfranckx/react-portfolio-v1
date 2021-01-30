@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Resume.css';
+import '../../styles/Resume.css';
 import Footer from '../Footer';
 
 export default function Resume()  {

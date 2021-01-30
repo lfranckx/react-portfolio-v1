@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/App.css';
-import '../styles/HeroSection.css';
+import '../../styles/App.css';
+import '../../styles/HeroSection.css';
 
 import Footer from '../Footer';
 import Typical from "react-typical";
