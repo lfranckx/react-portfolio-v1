@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <section className='hero-container'>
-                <video src='/videos/video-5.mp4' autoPlay loop muted />
+                <video src='/videos/video-1.mp4' autoPlay loop muted />
                 <h1>I am Lachlan, a
                     <Typical
                         className={"typical"}
