@@ -1,10 +1,11 @@
 import React from 'react';
-import '../../styles/App.css';
-import '../../styles/HeroSection.css';
+import '../../../styles/App.css';
+import '../../../styles/HeroSection.css';
 
-import Footer from '../Footer';
+import Process from "./Process";
+import Footer from '../../Footer';
 import Typical from "react-typical";
-import { Button } from "../Button";
+import { Button } from "../../Button";
 
 export default function Home() {
     return (
@@ -79,10 +80,7 @@ export default function Home() {
                 {/*    </div>*/}
                 {/*</div>*/}
             </section>
-            <section className={'container'}>
-                <h2>My Creative Process</h2>
-                <p>I start with figuring out what the customer wants their application to do and how they want it to look.</p>
-            </section>
+            <Process />
             <Footer />
         </>
     );

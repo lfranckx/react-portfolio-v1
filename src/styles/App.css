@@ -23,6 +23,20 @@ ul li {
   padding: 2rem;
 }
 
+.h1 {
+  font-size: 2rem;
+  margin-bottom: .6rem;
+}
+
+.h2 {
+  font-size: 1.6rem;
+  margin-bottom: .6rem;
+}
+
+.h3 {
+  font-size: 1.4rem;
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -42,6 +56,10 @@ h2 {
 .narrow {
   max-width: 1080px;
   margin: auto;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
