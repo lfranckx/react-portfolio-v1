@@ -1,0 +1,44 @@
+.about-page {
+    background-color: #242424;
+    padding: 2rem;
+}
+
+.about-page h2 {
+    text-align: center;
+
+}
+
+.top-line {
+    border-top: 2px #fff solid;
+    width: 4rem;
+    margin: 2rem auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.img-1 {
+    border-radius: 50%;
+    margin: auto;
+}
+
+#about p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.about-skills h3 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 4rem;
+}

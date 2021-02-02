@@ -6,7 +6,7 @@ import 'animate.css/animate.min.css';
 
 import { GiTalk, MdPhotoSizeSelectSmall, FaCode, MdDevices } from "react-icons/all";
 
-export default (props) => {
+export default function Process() {
     return (
         <div id={'process'}>
             <section className={'text-center'}>

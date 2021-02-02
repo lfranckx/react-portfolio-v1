@@ -62,7 +62,6 @@ function Footer() {
                     </Link>
                 </div>
             </section>
-
         </div>
     );
 }
