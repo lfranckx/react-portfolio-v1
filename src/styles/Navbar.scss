@@ -1,4 +1,7 @@
+@use 'vars';
+
 .navbar {
+    //background-color: vars.$st-patricks-blue;
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     padding: 2rem;
     height: 80px;
@@ -20,7 +23,7 @@
 }
 
 .navbar-logo {
-    color: #fff;
+    color: var(--white);
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -49,7 +52,7 @@
 }
 
 .nav-links {
-    color: #fff;
+    color: var(--white);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -63,7 +66,7 @@
 }
 
 .fa-bars {
-    color: #fff;
+    color: var(--white);
 }
 
 .nav-links-mobile {
@@ -111,8 +114,8 @@
     }
 
     .nav-links:hover {
-        background-color: #fff;
-        color: #242424;
+        background-color: var(--white);
+        color: var(--raisin-black);
         border-radius: 0;
     }
 
@@ -135,7 +138,7 @@
     }
 
     .fa-times {
-        color: #fff;
+        color: var(--white);
         font-size: 2rem;
     }
 

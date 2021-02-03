@@ -1,6 +1,5 @@
-import React from 'react';
-import '../../../styles/App.css';
-import '../../../styles/HeroSection.css';
+import React, { useEffect } from 'react';
+import '../../../styles/HeroSection.scss';
 
 import Process from "./Process";
 import Footer from '../../Footer';
@@ -8,6 +7,11 @@ import Typical from "react-typical";
 import { Button } from "../../Button";
 
 export default function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <section className='hero-container'>
@@ -33,8 +37,8 @@ export default function Home() {
                 </div>
             </section>
             <section className={'container skills-container'}>
-                <h2>Specialized Skills</h2>
-                <p>Allowing my client's needs to dictate design while keeping responsiveness at the forefront.</p>
+                <h2 className={'h1'}>Specialized Skills</h2>
+                <p className={'h3'}>Allowing my client's needs to dictate design while keeping responsiveness at the forefront.</p>
                 <div className={'skills-list'}>
                     <div className={'skills-card'}>
                         <i className="fas fa-brain skill-icon"></i>
@@ -49,7 +53,7 @@ export default function Home() {
                     <div className={'skills-card'}>
                         <i className="fas fa-tv skill-icon"></i>
                         <h3>Design</h3>
-                        <p className={'skills-desc'}>Making the project look as good as it functions</p>
+                        <p className={'skills-desc'}>Making the project look as good as it functions.</p>
                     </div>
                     <div className={'skills-card'}>
                         <i className="fas fa-user skill-icon"></i>

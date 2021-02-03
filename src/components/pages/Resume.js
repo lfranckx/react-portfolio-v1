@@ -1,28 +1,20 @@
-import React from "react";
-import '../../styles/Resume.css';
+import React, {useEffect, useState} from "react";
+import { FaChevronRight } from "react-icons/fa";
+import '../../styles/Resume.scss';
 import Footer from '../Footer';
 
 export default function Resume()  {
 
-    let arrow = <i className="fas fa-chevron-down"></i>;
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
-    const toggleVisibility = (id) => {
-        const selection = document.getElementById(id);
-        if (selection.style.display === "none") {
-            selection.style.display = "block";
-        } else {
-            selection.style.display = "none";
-        }
-        toggleArrow();
-    }
-
-    const toggleArrow = (id) => {
-        if (arrow === <i className="fas fa-chevron-right"></i>) {
-            return arrow = <i className="fas fa-chevron-down"></i>
-        } else {
-            return arrow = <i className="fas fa-chevron-right"></i>
-        }
-    }
+    const [contactOpen, toggleContact] = useState(false);
+    const [skillsOpen, toggleSkills] = useState(false);
+    const [projectsOpen, toggleProjects] = useState(false);
+    const [clientProjectsOpen, toggleClientProjects] = useState(false);
+    const [educationOpen, toggleEducation] = useState(false);
+    const [experienceOpen, toggleExperience] = useState(false);
 
     return (
         <div className={'resume-page'}>
@@ -33,12 +25,14 @@ export default function Resume()  {
                 <section className={'resume-contact section'}>
                     <div className={'contact-item'}>
                         <div className={'flex'}>
-                            <button className={'arrow'} onClick={() => toggleVisibility('section1')}>{arrow}</button>
+                            <button className={'arrow'} onClick={() => toggleContact(!contactOpen)}>
+                                <FaChevronRight className={contactOpen ? "rotate" : ""} />
+                            </button>
                             <h2>&nbsp; Lachlan Franckx</h2>
                         </div>
                         <h3>Full-stack Developer</h3>
                     </div>
-                    <div id={'section1'} className={'pad-u-2 pad-s-2'}>
+                    <div id={'section1'} className={contactOpen ? 'pad-u-2 pad-s-2 show' : 'hide'}>
                         <div>
                             <div className={'contact-item'}>
                                 <p>Los Angeles, CA</p>
@@ -62,10 +56,12 @@ export default function Resume()  {
 
                 <section className={'resume-skills section'}>
                     <div className={'flex'}>
-                        <button className={'arrow'} onClick={() => toggleVisibility('section2')}>{arrow}</button>
+                        <button className={'arrow'} onClick={() => toggleSkills(!skillsOpen)}>
+                            <FaChevronRight className={skillsOpen ? "rotate" : ""} />
+                        </button>
                         <h3>&nbsp; Skills</h3>
                     </div>
-                    <div id={'section2'} className={'pad-u-2 pad-s-2'}>
+                    <div id={'section2'} className={skillsOpen ? 'pad-u-2 pad-s-2 show' : "hide"}>
                         <ul id={'accordion'}>
                             <li>JavaScript</li>
                             <li>React</li>
@@ -92,10 +88,12 @@ export default function Resume()  {
 
                 <section className={'resume-projects section'}>
                     <div className={'flex'}>
-                        <button className={'arrow'} onClick={() => toggleVisibility('section3')}>{arrow}</button>
+                        <button className={'arrow'} onClick={() => toggleProjects(!projectsOpen)}>
+                            <FaChevronRight className={projectsOpen ? "rotate" : ""} />
+                        </button>
                         <h3>&nbsp; Full-Stack Applications</h3>
                     </div>
-                    <div id={'section3'} className={'pad-u-2 pad-s-2'}>
+                    <div id={'section3'} className={projectsOpen ? 'pad-u-2 pad-s-2 show' : 'hide'}>
                         <div className={'travelog'}>
                             <a className={'project-name'} href={'/'}>Travelog</a> | <a href={'/'}>Github</a>
                             <ul>
@@ -118,11 +116,13 @@ export default function Resume()  {
 
                 <section className={'client-projects section'}>
                     <div className={'flex'}>
-                        <button className={'arrow'} onClick={() => toggleVisibility('section4')}>{arrow}</button>
+                        <button className={'arrow'} onClick={() => toggleClientProjects(!clientProjectsOpen)}>
+                            <FaChevronRight className={clientProjectsOpen ? "rotate" : ""} />
+                        </button>
                         <h3>&nbsp; Professional Client Projects</h3>
                     </div>
 
-                    <div  id={'section4'} className={'omg-artistry pad-u-2 pad-s-2'}>
+                    <div  id={'section4'} className={clientProjectsOpen ? 'omg-artistry pad-u-2 pad-s-2 show' : 'hide'}>
                         <a className={'project-name'} href={'/'}>OMG Artistry</a> | <a href={'/'}>Github</a>
                         <ul>
                             <li>Restructured the layout of a Shopify store making it more easy for customers to navigate through the site.</li>
@@ -134,10 +134,12 @@ export default function Resume()  {
 
                 <section className={'resume-education section'}>
                     <div className={'flex'}>
-                        <button className={'arrow'} onClick={() => toggleVisibility('section5')}>{arrow}</button>
+                        <button className={'arrow'} onClick={() => toggleEducation(!educationOpen)}>
+                            <FaChevronRight className={educationOpen ? "rotate" : ""} />
+                        </button>
                         <h3>&nbsp; Education</h3>
                     </div>
-                    <div id={'section5'} className={'pad-u-2 pad-s-2'}>
+                    <div id={'section5'} className={educationOpen ? 'pad-u-2 pad-s-2 show' : 'hide'}>
                         <h4>Bloc</h4>
                         <h4>Web Development Career Training</h4>
                         <ul>
@@ -151,10 +153,12 @@ export default function Resume()  {
 
                 <section className={'resume-experience section'}>
                     <div className={'flex'}>
-                        <button className={'arrow'} onClick={() => toggleVisibility('section6')}>{arrow}</button>
+                        <button className={'arrow'} onClick={() => toggleExperience(!experienceOpen)}>
+                            <FaChevronRight className={experienceOpen ? "rotate" : ""} />
+                        </button>
                         <h3>&nbsp; Experience</h3>
                     </div>
-                    <div id={'section6'} className={'pad-u-2 pad-s-2'}>
+                    <div id={'section6'} className={experienceOpen ? 'pad-u-2 pad-s-2 show' : 'hide'}>
                         <div>
                             <h4>Freelance</h4>
                             <ul>

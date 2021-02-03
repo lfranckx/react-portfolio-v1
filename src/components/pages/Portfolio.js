@@ -1,26 +1,28 @@
-import React, { Component } from "react";
+import React, {Component, useEffect} from "react";
 
-export default class Portfolio extends Component {
-    render() {
-        return (
-            <div className={'portfolio'}>
-                <section>
-                    <h2>Full-stack Projects</h2>
-                    <div className={'p1'}>
+export default function Portfolio() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
-                    </div>
-                    <div className={'p2'}>
+    return (
+        <div className={'portfolio'}>
+            <section>
+                <h2>Full-stack Projects</h2>
+                <div className={'p1'}>
 
-                    </div>
-                    <div className={'p3'}>
+                </div>
+                <div className={'p2'}>
 
-                    </div>
-                </section>
+                </div>
+                <div className={'p3'}>
 
-                <section>
-                    <h2>Freelance Client Work</h2>
-                </section>
-            </div>
-        )
-    }
+                </div>
+            </section>
+
+            <section>
+                <h2>Freelance Client Work</h2>
+            </section>
+        </div>
+    )
 }

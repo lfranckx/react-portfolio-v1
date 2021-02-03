@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/Contact.css';
+import '../../styles/Contact.scss';
 import Footer from "../Footer";
 
 const formatPhoneNumber = (value, previousValue) => {
@@ -22,6 +22,10 @@ const formatPhoneNumber = (value, previousValue) => {
 }
 
 export default class Contact extends React.Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
 
     constructor() {
         super();

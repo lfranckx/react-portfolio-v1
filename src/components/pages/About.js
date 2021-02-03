@@ -1,13 +1,18 @@
-import React from "react";
-import '../../styles/About.css';
+import React, {useEffect} from "react";
+import '../../styles/About.scss';
 import Footer from "../Footer";
 
 export default function About() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <div className={'about-page'}>
                 <div className={'narrow'}>
-                    <h2>"The best preparation for tomorrow is doing your best today."</h2>
+                    <h2 className={'h2'}>"The best preparation for tomorrow is doing your best today."</h2>
                     <div className={'top-line'}></div>
                     <div className={'about-container'}>
                         {/*<div id={'img-container'}>*/}
@@ -15,7 +20,7 @@ export default function About() {
                         {/*        className={'about-img img-1'}/>*/}
                         {/*</div>*/}
                         <section id={'about'}>
-                            <p>
+                            <p className={'h2'}>
                                 I am a full-stack web developer currently residing in Los Angeles.
                                 I am skilled at building web applications from the ground up – from
                                 concept, to design, to writing functional, testable, and efficient code
@@ -42,9 +47,10 @@ export default function About() {
                             <i className="fab fa-js-square"></i>
                             <i className="fab fa-html5"></i>
                             <i className="fab fa-shopify"></i>
+                            <i className="fab fa-aws"></i>
                             <i className="fab fa-react"></i>
                             <i className="fab fa-node-js"></i>
-                            <i className="fab fa-aws"></i>
+                            <i className="fab fa-sass"></i>
                             <i className="fab fa-css3-alt"></i>
                             <i className="fab fa-github"></i>
 
