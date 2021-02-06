@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import '../styles/Navbar.scss'
 
 function Navbar() {
@@ -37,41 +37,49 @@ function Navbar() {
 
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/home'
+                                 activeClassName={"selected"}
+                                 className='nav-links'
+                                 onClick={closeMobileMenu}
+                            >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            <NavLink to='/about'
+                                 activeClassName={"selected"}
+                                 className='nav-links'
+                                 onClick={closeMobileMenu}
+                            >
                                 About Me
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <Link
-                                to='/portfolio'
+                            <NavLink to='/portfolio'
+                                activeClassName={"selected"}
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
                                 Portfolio
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <Link
-                                to='/resume'
+                            <NavLink to='/resume'
+                                activeClassName={"selected"}
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
                                 Resume
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
-                                to='/contact'
+                            <NavLink to='/contact'
+                                activeClassName={"selected"}
                                 className='nav-links-mobile'
                                 onClick={closeMobileMenu}
                             >
                                 Contact
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                     {button && <Button buttonStyle='btn--outline'>Contact</Button>}

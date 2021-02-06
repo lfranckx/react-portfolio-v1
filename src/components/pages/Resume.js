@@ -95,7 +95,9 @@ export default function Resume()  {
                     </div>
                     <div id={'section3'} className={projectsOpen ? 'pad-u-2 pad-s-2 show' : 'hide'}>
                         <div className={'travelog'}>
-                            <a className={'project-name'} href={'/'}>Travelog</a> | <a href={'/'}>Github</a>
+                            <a className={'project-name large-text'} href={'https://travelog-client.now.sh/'}>Travelog</a> | &nbsp;
+                            <a className={'large-text'} href={'https://github.com/lfranckx/travelog-client'}>Client</a> | &nbsp;
+                            <a className={'large-text'} href={'https://github.com/lfranckx/travelog-api'}>API</a>
                             <ul>
                                 <li>Travel blogging sites for travel enthusiasts to connect and share stories and communicate on a unique platform.</li>
                                 <li>Focused on creating great product usability and building an elegant UI to enhance the user experience.</li>
@@ -103,8 +105,10 @@ export default function Resume()  {
                                     and integrates with a relational database using PostgreSQL and Knex.</li>
                             </ul>
                         </div>
-                        <div className={'workout-app section'}>
-                            <a className={'project-name'} href={'/'}>Workout App</a> | <a href={'/'}>Github</a>
+                        <div className={'workout-app'}>
+                            <a className={'project-name large-text'} href={'https://workout-creator-capstone-client.vercel.app/'}>Workout App</a> | &nbsp;
+                            <a className={'large-text'} href={'https://github.com/sarawarnock/workout-creator-capstone-client'}>Client</a> | &nbsp;
+                            <a className={'large-text'} href={'https://github.com/sarawarnock/workout-creator-capstone-server'}>API</a>
                             <ul>
                                 <li>Worked in a pair programming team to find solutions to previous bugs and problems within the app.</li>
                                 <li>Restructured the user authentication using JWT and built a Stopwatch component using React Hooks.</li>
@@ -123,11 +127,10 @@ export default function Resume()  {
                     </div>
 
                     <div  id={'section4'} className={clientProjectsOpen ? 'omg-artistry pad-u-2 pad-s-2 show' : 'hide'}>
-                        <a className={'project-name'} href={'/'}>OMG Artistry</a> | <a href={'/'}>Github</a>
+                        <a className={'project-name large-text'} href={'https://oliviasmalley.com/'}>OMG Artistry</a>
                         <ul>
-                            <li>Restructured the layout of a Shopify store making it more easy for customers to navigate through the site.</li>
+                            <li>Restructured the layout of a Shopify store making it easier for customers to navigate through the site.</li>
                             <li>Created live feeds from the client's Podcasts and Youtube channels</li>
-                            <li>Created a way for the </li>
                         </ul>
                     </div>
                 </section>
@@ -140,18 +143,18 @@ export default function Resume()  {
                         <h3>&nbsp; Education</h3>
                     </div>
                     <div id={'section5'} className={educationOpen ? 'pad-u-2 pad-s-2 show' : 'hide'}>
-                        <h4>Bloc</h4>
-                        <h4>Web Development Career Training</h4>
+                        <a className={'large-text'} href={'https://www.thinkful.com/'}>Thinkful</a>
+                        <p className={'large-text'}>Software Engineering Program</p>
                         <ul>
-                            <li>Full-stack coding course focused on the iterative development cycle using new technologies and industry best practices.</li>
-                            <li>Studied as an apprentice underneath the guidance of an industry professional.</li>
-                            <li>Built Express servers and relational databases using PostgreSQL and Knex which support all CRUD operations.</li>
-                            <li>Managed complex projects using agile development and maintaining version control using Git and Github.</li>
+                            <li><p>Full-stack coding course focused on the iterative development cycle using new technologies and industry best practices.</p></li>
+                            <li><p>Studied as an apprentice underneath the guidance of an industry professional.</p></li>
+                            <li><p>Built Express servers and relational databases using PostgreSQL and Knex which support all CRUD operations.</p></li>
+                            <li><p>Managed complex projects using agile development and maintaining version control using Git and Github.</p></li>
                         </ul>
                     </div>
                 </section>
 
-                <section className={'resume-experience section'}>
+                <section className={'resume-experience '}>
                     <div className={'flex'}>
                         <button className={'arrow'} onClick={() => toggleExperience(!experienceOpen)}>
                             <FaChevronRight className={experienceOpen ? "rotate" : ""} />
@@ -164,11 +167,10 @@ export default function Resume()  {
                             <ul>
                                 <li>Worked with a management company for a celebrity hair and make-up artist to help optimize her online store for SEO and boost online sales.</li>
                                 <li>Exceptional problem solving and decision making capabilities offering clients an array of solutions to choose from to best suit their needs.</li>
-                                <li></li>
                             </ul>
                         </div>
                         <div>
-                            <h4>Musician/Producer</h4>
+                            <h4 className={'pad-u-2'}>Musician/Producer</h4>
                             <ul>
                                 <li>Recorded and toured professionally across the country and internationally teaching me skills in independence, collaboration, time-management, flexibility, boldness, self-sufficiency, improvisation, and self-marketing.</li>
                             </ul>

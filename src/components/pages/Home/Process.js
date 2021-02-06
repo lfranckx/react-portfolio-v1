@@ -1,18 +1,19 @@
 import React from "react";
 import '../../../styles/Process.scss';
 
+import { GiTalk, MdPhotoSizeSelectSmall, FaCode, MdDevices } from "react-icons/all";
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
-import { GiTalk, MdPhotoSizeSelectSmall, FaCode, MdDevices } from "react-icons/all";
-
 export default function Process() {
+
+
     return (
         <div id={'process'}>
             <section className={'text-center'}>
-                <h2 className={'h1'}>My Creative Process</h2>
+                <h2 className={'h3'}>My Creative Process</h2>
                 <div className={'bottom-line'}></div>
-                <p className={'h3'}>I start with figuring out what the customer wants their application to do and how they want it to look.</p>
+                <h3 className={'h4'}>I start with figuring out what the customer wants their application to do and how they want it to look.</h3>
                 <div id={'timeline'}>
                     <ul>
                         <li className={'list-item'}>
@@ -23,7 +24,7 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <h3 className={'h1'}><GiTalk /></h3>
+                                    <div><GiTalk /></div>
                                     <h3 className={'h3 margin-bottom'}>Discuss</h3>
                                     <p className={'h4'}>Meet with client and discuss project needs and desired design.</p>
                                 </div>
@@ -37,7 +38,7 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <h3 className={'h1'}><MdPhotoSizeSelectSmall /></h3>
+                                    <div><MdPhotoSizeSelectSmall className={'card-icon'}/></div>
                                     <h3 className={'h3 margin-bottom'}>Design Wireframes</h3>
                                     <p className={'h4'}>Create wireframes based on the conversation so the client can see what the project would look like when finished.</p>
                                 </div>
@@ -51,7 +52,7 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <h3 className={'h1'}><FaCode /></h3>
+                                    <div><FaCode className={'card-icon'}/></div>
                                     <h3 className={'h3 margin-bottom'}>Write Code</h3>
                                     <p className={'h4'}>Write functional code while remaining in communication with the client at each step to make sure their needs haven't changed.</p>
                                 </div>
@@ -65,7 +66,7 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <h3 className={'h1'}><MdDevices /></h3>
+                                    <div className={'h1'}><MdDevices className={'card-icon'}/></div>
                                     <h3 className={'h3 margin-bottom'}>Make Responsive</h3>
                                     <p className={'h4'}>Make sure the website or application is responsive on all of the devices of the user audience.</p>
                                 </div>
@@ -79,7 +80,7 @@ export default function Process() {
                                 animateOnce={true}
                             >
                                 <div className={'card'}>
-                                    <h3 className={'h1'}><i className="far fa-calendar-check h1"></i></h3>
+                                    <div className={'h1'}><i className="far fa-calendar-check h1"></i></div>
                                     <h3 className={'h3 margin-bottom'}>Deliver Project</h3>
                                     <p className={'h4'}>Deliver the final product on time and with the approval of the client.</p>
                                 </div>

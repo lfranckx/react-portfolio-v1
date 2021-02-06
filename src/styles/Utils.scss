@@ -23,11 +23,9 @@
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     background-color: #242424;
-    padding: 2rem;
+    padding: 2rem 5px;
 }
 
 
@@ -89,4 +87,16 @@
   
 .text-center {
     text-align: center;
+}
+
+.bottom-line {
+    border-bottom: 2px #fff solid;
+    width: 4rem;
+    margin: 2rem auto;
+}
+
+.top-line {
+    border-top: 2px #fff solid;
+    width: 4rem;
+    margin: 2rem auto;
 }
