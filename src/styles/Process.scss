@@ -48,7 +48,7 @@
                         div {
                             svg {
                                 margin: 0 1rem;
-                                font-size: 3rem;
+                                font-size: $font3rem;
                                 color: $black;
                             }
                         }
@@ -59,7 +59,7 @@
                             justify-content: center;
                             padding: 0;
                             font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-                            font-size: 1.6rem;
+                            font-size: $font1-6rem;
                             font-weight: 500;
                             color: $carolina-blue;
                         }
@@ -68,7 +68,7 @@
                             font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Geneva,Verdana,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
                             font-weight: 300;
                             color: $white;
-                            font-size: 1.2rem;
+                            font-size: $font1-2rem;
                         }
 
                         /* ARROW STYLE */
@@ -135,8 +135,12 @@
     }
 }
 
-@media screen and (max-width: $Medium) {
+@media screen and (max-width: $Large) {
     #process {
         padding: 2rem;
     }
+}
+
+@media screen and (max-width: $Medium) {
+
 }
