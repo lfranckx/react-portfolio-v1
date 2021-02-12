@@ -15,10 +15,6 @@ export default function About() {
                     <h2 className={'h2'}>"The best preparation for tomorrow is doing your best today."</h2>
                     <div className={'top-line'}></div>
                     <div className={'about-container'}>
-                        {/*<div id={'img-container'}>*/}
-                        {/*    <img src={'/images/img-1.jpg'} alt={'playing_the_drums'}*/}
-                        {/*        className={'about-img img-1'}/>*/}
-                        {/*</div>*/}
                         <section id={'about'}>
                             <p className={'h2'}>
                                 I am a full-stack web developer currently residing in Los Angeles.
@@ -31,7 +27,7 @@ export default function About() {
                             <p>
                                 My coding philosophy starts with strategic planning, designing, and
                                 developing applications to help reach desired objectives and goals.
-                                I surround myself with technical people, activities, hobbies, and
+                                I surround myself with technical and creative people, activities, hobbies, and
                                 endeavors that push me to keep learning through experience. My background
                                 was originally in music and music technology. I have always loved playing
                                 music ever since I was young and had dreams to take over the world. Now
