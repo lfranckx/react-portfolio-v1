@@ -101,15 +101,14 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-    }
 
-    .nav-menu.active {
-        background: #242222;
-        //background: $color2;
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
+        &.active {
+            background: $black2;
+            left: 0;
+            opacity: 1;
+            transition: all 0.5s ease;
+            z-index: 1;
+        }
     }
 
     .nav-links {
@@ -117,12 +116,21 @@
         padding: 2rem;
         width: 100%;
         display: table;
-    }
 
-    .nav-links:hover {
-        background-color: $white;
-        color: $black;
-        border-radius: 0;
+        &:hover {
+            background-color: $white;
+            color: $black;
+            border-radius: 0;
+            border-bottom: 4px solid $black2;
+            border-top: 4px solid $black2;
+        }
+
+        &.selected {
+            background-color: $white;
+            color: $black;
+            border-radius: 0;
+            border: none;
+        }   
     }
 
     .navbar-logo {
@@ -159,13 +167,13 @@
         background-color: transparent;
         color: $white;
         padding: 14px 20px;
-        border: 1px solid #fff;
+        border: 1px solid$white;
         transition: all 0.3s ease-out;
-    }
 
-    .nav-links-mobile:hover {
-        background: #fff;
-        color: $black;
-        transition: 250ms;
+        &:hover {
+            background:$white;
+            color: $black;
+            transition: 250ms;
+        }
     }
 }
