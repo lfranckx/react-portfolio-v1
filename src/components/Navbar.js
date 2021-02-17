@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import '../styles/Navbar2.scss';
+import '../styles/Navbar.scss';
 
 export default (props) => {
 
