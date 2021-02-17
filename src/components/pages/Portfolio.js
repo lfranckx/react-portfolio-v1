@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Footer from "../Footer";
+import '../../styles/Portfolio.scss';
 
 export default function Portfolio() {
     useEffect(() => {
@@ -9,22 +11,21 @@ export default function Portfolio() {
         <>
             <main className={'portfolio'}>
                 <section>
-                    <h2>Full-stack Projects</h2>
-                    <div className={'p1'}>
-
-                    </div>
-                    <div className={'p2'}>
-
-                    </div>
-                    <div className={'p3'}>
+                    <h1 className={'h2'}>Professional Work</h1>
+                    <div className='projects'>
 
                     </div>
                 </section>
 
                 <section>
-                    <h2>Freelance Client Work</h2>
+                    <h1 className={'h2'}>Full-Stack Projects</h1>
+                    <div className={'projects'}>
+                        
+                    </div>
                 </section>
             </main>
+
+            <Footer />
         </>
     )
 }

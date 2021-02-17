@@ -9,7 +9,6 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 import About from "./components/pages/About";
-import Navbar2 from './components/Navbar';
 
 function App() {
   return (

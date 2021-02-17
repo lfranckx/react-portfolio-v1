@@ -25,6 +25,11 @@ video {
         font-size: 90px;
         margin-top: -100px;
         display: inline;
+        font-family: 'PT Sans', sans-serif;
+
+        span {
+            display: block;
+        }
     }
 
     h2 {
@@ -40,16 +45,15 @@ video {
         margin-top: 32px;
 
         .btn {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
             background-color: transparent;
             color: #fff;
             border: 1px solid $white;
             text-decoration: none;
             margin: 6px;
             padding: 12px 26px;
-            font-size: 20px;
-            order-radius: 2px;
-            outline: none;
-            cursor: pointer;
+            border-radius: 2px;
             transition: all 0.3s ease-out;
         }
 
@@ -149,7 +153,7 @@ video {
             margin-top: -100px;
         }
         p {
-            font-size: 30px;
+            font-size: 50px;
         }
     }
 
