@@ -18,7 +18,7 @@ export default function Resume()  {
 
     return (
         <div className={'resume-page'}>
-            <div className={'resume-container'}>
+            <main className={'resume-container'}>
                 <div className={'download-resume'}>
                     <a href={'/Docs/Web Dev Resume - Blue.pdf'} download={'/Docs/Web Dev Resume - Blue.pdf'}>Download Copy</a>
                 </div>
@@ -177,7 +177,7 @@ export default function Resume()  {
                         </div>
                     </div>
                 </section>
-            </div>
+            </main>
             <Footer />
         </div>
     )

@@ -10,13 +10,13 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 import About from "./components/pages/About";
+import Navbar2 from './components/Navbar';
 
 function App() {
   return (
       <>
         <Router>
           <Navbar />
-          <main>
             <Switch>
               <Route exact path="/" render={() => <Redirect to={'/home'} />} />
               <Route path='/home' exact component={Home} />
@@ -25,7 +25,6 @@ function App() {
               <Route path='/contact' component={Contact} />
               <Route path={'/about'} component={About}/>
             </Switch>
-          </main>
         </Router>
       </>
   );

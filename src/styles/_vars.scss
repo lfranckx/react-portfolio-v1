@@ -3,7 +3,9 @@ $white: #fff;
 $black: #242424;
 $black2: #242222;
 $grey: #CACAC9;
-$dark-grey: #2f2e2d;$color1: rgba(88, 75, 83, 1);
+$dark-grey: #2f2e2d;
+$color1: rgba(88, 75, 83, 1);
+$gradient-black: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
 
 // Color Scheme 1
 $orange-web: rgba(255, 164, 0, 1);
@@ -47,7 +49,8 @@ $font1-2rem: 1.2rem;
 
 // Media Sizes
 $Large: 1320px;
-$Medium: 1080px;
+// $Medium: 1080px;
+$Medium: 950px;
 $Small: 800px;
 $Smallest: 600px;
 
@@ -56,11 +59,6 @@ $Smallest: 600px;
   $font1-6rem: 1.2rem;
   $font1-2rem: 0.9rem;
 }
-
-
-
-
-
 
 
 

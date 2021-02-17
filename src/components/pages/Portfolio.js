@@ -6,23 +6,25 @@ export default function Portfolio() {
     }, [])
 
     return (
-        <div className={'portfolio'}>
-            <section>
-                <h2>Full-stack Projects</h2>
-                <div className={'p1'}>
+        <>
+            <main className={'portfolio'}>
+                <section>
+                    <h2>Full-stack Projects</h2>
+                    <div className={'p1'}>
 
-                </div>
-                <div className={'p2'}>
+                    </div>
+                    <div className={'p2'}>
 
-                </div>
-                <div className={'p3'}>
+                    </div>
+                    <div className={'p3'}>
 
-                </div>
-            </section>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Freelance Client Work</h2>
-            </section>
-        </div>
+                <section>
+                    <h2>Freelance Client Work</h2>
+                </section>
+            </main>
+        </>
     )
 }

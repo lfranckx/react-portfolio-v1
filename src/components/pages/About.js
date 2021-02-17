@@ -10,7 +10,7 @@ export default function About() {
 
     return (
         <>
-            <div className={'about-page'}>
+            <main className={'about-page'}>
                 <div className={'narrow'}>
                     <h2 className={'h2'}>"The best preparation for tomorrow is doing your best today."</h2>
                     <div className={'top-line'}></div>
@@ -53,7 +53,7 @@ export default function About() {
                         </div>
                     </section>
                 </div>
-            </div>
+            </main>
             <Footer />
         </>
     )

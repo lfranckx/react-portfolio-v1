@@ -42,7 +42,7 @@ export default class Contact extends React.Component {
     render () {
         return (
             <>
-                <div className={'container contact-container'}>
+                <main className={'container contact-container'}>
                     <h2 className={'h1'}>Contact Me</h2>
                     <form className={'contact-form  margin-auto'}>
                         <div className={'flex name-and-email'}>
@@ -71,7 +71,7 @@ export default class Contact extends React.Component {
                         </div>
                         <button className={'btn submit'}>Send</button>
                     </form>
-                </div>
+                </main>
                 <Footer />
             </>
         )
