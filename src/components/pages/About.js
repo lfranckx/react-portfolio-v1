@@ -49,7 +49,6 @@ export default function About() {
                             <i className="fab fa-sass"></i>
                             <i className="fab fa-css3-alt"></i>
                             <i className="fab fa-github"></i>
-
                         </div>
                     </section>
                 </div>
